@@ -19,7 +19,7 @@ def valid_phone_number?(phone)
     return true
   elsif !!phone.match(/^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$/)
     return true
-  elsif !!phone.match(/^[0-9]{3} [0-9]{4} [0-9]{3}$/)
+  elsif !!phone.match(/^[0-9]{3} [0-9]{3} [0-9]{4}$/)
     return true
   elsif !!phone.match(/^\([0-9]{3}\)[0-9]{7}$/)
     return true
