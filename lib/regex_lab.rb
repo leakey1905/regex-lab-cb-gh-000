@@ -17,7 +17,7 @@ end
 def valid_phone_number?(phone)
   if !!phone.match(/^[0-9]{10}$/)
     return true
-  elsif !!phone.match(/^\(\d{3}\)\d{3}-\d{4}$/)
+  elsif !!phone.match(/^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$/)
     return true
   elsif !!phone.match(/^\d{3} \d{4} \d{3}$/)
     return true
