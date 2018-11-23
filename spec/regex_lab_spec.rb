@@ -23,7 +23,7 @@ describe "Working with Regular expressions" do
   describe "#words_starting_with_un_and_ending_with_ing" do
     it "returns an array with the words starting with 'un' and ending with 'ing'" do
       words_string = "unassuming ambiguous understanding pomp circumstance uninteresting uncompromising grouchy corollary"
-      
+
       expect(words_starting_with_un_and_ending_with_ing(words_string).count).to eq(4)
       expect(words_starting_with_un_and_ending_with_ing(words_string)).to include("understanding")
       expect(words_starting_with_un_and_ending_with_ing(words_string)).not_to include("pomp")
@@ -62,6 +62,7 @@ describe "Working with Regular expressions" do
 
   describe "#valid_phone_number?" do
     it "returns true for valid phone numbers, regardless of formatting" do
+
       valid_numbers = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
       expect(valid_numbers.all? { |number| valid_phone_number?(number) }).to be(true)
     end
