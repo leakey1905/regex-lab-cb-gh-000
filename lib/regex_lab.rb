@@ -3,11 +3,11 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  text.split.grep(/un/)
+  text.split.grep(/un*ing/)
 end
 
 def words_five_letters_long(text)
-  
+
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
